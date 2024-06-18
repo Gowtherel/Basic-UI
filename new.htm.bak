@@ -1,0 +1,28 @@
+<doctype!!DOCTYPE html>
+<html>
+<head>
+	<title>WEB PAGE</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="banner">
+	<div class="navbar">
+		<img src="Logos.png" class="logo">
+		<ul>
+			<li><a href="new.htm">Home</a></li>
+			<li><a href="ContactUs.htm">Contact Us</a></li>
+			<li><a href="index.html">About us</a></li>
+			
+		</ul>
+	</div>
+	
+	<div class="content">
+		<h1>WEAR WITH SWAG</h1>
+		<h2>Welcome To "HOODIES CLOTHING SHOP" <br>Online Store</h2>
+		<div>
+			<button onclick="location.href='Hoodie.htm'" type="button"><span></span>BROWSE HOODIES</button>
+			<button onclick="location.href='Sweater.htm'" type="button"><span></span>BROWSE SWEATERS</button>
+		
+</div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us</title>
+<style>
+body {
+  font-family: "Comic Sans MS", "Times New Roman", serif;
+}
+h1 { color:#FFFFFF }
+h2 { color:#FFFFFF }
+p { color:#FFFFFF }
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+body {
+  background-color: #18191A;
+} 
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #009648;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.2s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: #384757;
+  color: #F9FBED;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #007988;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #18191A;
+  padding: 20px;
+}
+
+@media screen and (max-width:1150px) {
+  .product {
+    width: calc(33% - 23px);
+  }
+}
+
+@media screen and (max-width:700px) {
+  .product {
+    width: calc(50% - 43px);
+  }
+}
+
+@media screen and (max-width:400px) {
+  .product {
+    width: 100%;
+  }
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #007998;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  background: #007988;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="navbar">
+      <img src="Logos.png" class="logo">
+      <ul>
+        <li><a href="main.htm">Home</a></li>
+        <li><a href="ContactUs.htm">Contact Us</a></li>
+        <li><a href="AboutUs.html">About us</a></li>
+      </ul>
+    </div>
+
+    <h1 style="text-align:center;">Contact Form</h1>
+
+    <h2 style="text-align:center;">We'd love to help!</h2>
+    <p style="text-align:center;">We like to create things with fun, open-minded people.</p>
+    <p style="text-align:center;">Feel free to say hello!</p>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+        <label for="mname">Middle Name</label>
+        <input type="text" id="mname" name="middlename" placeholder="Your middle name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="emailaddress" placeholder="Your email address..">
+
+        <label for="cnumber">Contact Number</label>
+        <input type="text" id="cnumber" name="contactnumber" placeholder="Your contact number..">
+        
+        <label for="country">Country</label> 
+        <select id="country" name="country"> 
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="philippines">Philippines</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+
+      <h2 style="text-align:center;">Want to know more about the Hoodies Clothing Shop? You may call us on:</h2>
+      <p style="text-align:center;">09176834456 or 09534891224</p>
+
+      <h1 style="text-align:center;">FOR MORE INFORMATION VISIT US ON:</h1>
+      <p style="text-align:center;">www.hoodiesclothingshop.com</p>
+
+      <h2 style="text-align:center;">Location:</h2>
+      <p style="text-align:center;">1314 Tandang Sora Street</p>
+      <p style="text-align:center;">Sta. Cruz, Manila, Philippines</p>
+
+      <div align="center">
+        <button onclick="location.href='hoodie.htm'" type="button"><span></span>BROWSE HOODIES</button>
+        <button onclick="location.href='sweater.htm'" type="button"><span></span>BROWSE SWEATERS</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

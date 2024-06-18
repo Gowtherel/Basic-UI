@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweaters</title>
+<style>
+
+body {
+  background-image: url("PaleBlack.png");
+}
+
+
+
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #009648;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.2s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+
+
+
+
+
+        .products {
+            width: 100%;
+           
+        }
+
+        .product {
+            display: inline-block;
+            width: calc(24% - 13px);
+            margin: 10px 10px 30px 10px;
+            vertical-align: top;
+	    font-family: Raleway;
+        }
+
+        .product img {
+            display: block;
+            margin: 0 auto;
+            width: 900;
+            height: 200px;
+            max-width: calc(100% - 20px);
+            background-cover: fit;
+            box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+
+        .product-content {
+            text-align: center;
+		color: #FBFBF0;
+        }
+
+        .product h3 {
+            font-size: 25px;
+            font-weight: 600;
+            margin: 10px 0 0 0;
+        }
+
+        .product h3 small {
+            display: block;
+            font-size: 19px;
+            font-weight: 400;
+            font-style: italic;
+            margin: 7px 0 0 0;
+        }
+
+        .product .product-text {
+            margin: 7px 0 0 0;
+            color: #E6FADD;
+        }
+
+        .product .price {
+            font-family: sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .product .genre {
+            font-size: 14px;
+        }
+
+
+        @media screen and (max-width:1150px) {
+            .product {
+                width: calc(33% - 23px);
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            .product {
+                width: calc(50% - 43px);
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .product {
+                width: 100%;
+            }
+        }
+
+
+
+	button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #007998;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+span{
+	background: #007988;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+button:hover{
+	border: none;
+}
+</style>
+<body>
+
+	<div class="banner">
+	<div class="navbar">
+		<img src="Logos.png" class="logo">
+		<ul>
+			<li><a href="main.htm">Home</a></li>
+			<li><a href="ContactUs.htm">Contact Us</a></li>
+			<li><a href="AboutUs.html">About us</a></li>
+		</ul>
+	</div>
+
+
+<h1 style="text-align:center; color: white;">OUR SWEATERS</h1>
+&nbsp &nbsp &nbsp &nbsp
+
+    <div class="products products-table">
+        <div class="product">
+            <div class="product-img">
+                <img src="s1.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Christmas Themed Sweater
+                    <small>Unisex</small>
+                </h3>
+                <p class="product-text price">Php 3999.99</p>
+                <p class="product-text genre">Almost Sold Out</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s2.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Plain Pastel Blue Sweater
+                    <small>Unisex</small>
+                </h3>
+                <p class="product-text price">Php 2999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s3.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Cream Knitted Sweater
+                    <small>Unisex</small>
+                </h3>
+                <p class="product-text price">Php 2999.99</p>
+                <p class="product-text genre">Sold Out</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s4.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Brown Patterned Sweater
+                    <small>Unisex</small>
+                </h3>
+                <p class="product-text price">Php 1999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s5.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    White Printed Sweater
+                    <small>Unisex<</small>
+                </h3>
+                <p class="product-text price">Php 3999.99</p>
+                <p class="product-text genre">Sold Out</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s6.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    White Knitted Sweater
+                    <small>For Women</small>
+                </h3>
+                <p class="product-text price">Php 2999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s7.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Black Sweater Vest
+                    <small>For Men</small>
+                </h3>
+                <p class="product-text price">Php 3999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s8.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Pastel Brown Sweater
+                    <small>Unisex</small>
+                </h3>
+                <p class="product-text price">Php 2999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s9.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    White Sweater Vest
+                    <small>For Women</small>
+                </h3>
+                <p class="product-text price">Php 3999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s10.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    White Striped Sweater
+                    <small>For Women</small>
+                </h3>
+                <p class="product-text price">Php 1999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s11.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Yellow Striped Sweater
+                    <small>For Men</small>
+                </h3>
+                <p class="product-text price">Php 1999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+	<div class="product">
+            <div class="product-img">
+                <img src="s12.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Yellow Knitted Sweater
+                    <small>For Women</small>
+                </h3>
+                <p class="product-text price">Php 2999.99</p>
+                <p class="product-text genre">Almost Sold Out</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s14.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                   Pink Fitted Sweater
+                    <small>For Women</small>
+                </h3>
+                <p class="product-text price">Php 1999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s13.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Plain Yellow Cropped Sweater
+                    <small>For Women</small>
+                </h3>
+                <p class="product-text price">Php 2999.99</p>
+                <p class="product-text genre">Sold Out</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-img">
+                <img src="s15.png" width="450" height="250">
+            </div>
+            <div class="product-content">
+                <h3>
+                    Plain White Cropped Sweater
+                    <small>For Women</small>
+                </h3>
+                <p class="product-text price">Php 2999.99</p>
+                <p class="product-text genre">Available</p>
+            </div>
+        </div>
+
+		<div align="center">
+			<button onclick="location.href='hoodie.htm'" type="button"><span></span>BROWSE HOODIES</button>
+			<button onclick="location.href='sweater.htm'" type="button"><span></span>BROWSE SWEATERS</button>
+		</div>
+
+
+    </div>
+</body>
+
+</html>
